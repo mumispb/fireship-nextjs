@@ -3,16 +3,8 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
+import Loader from "../components/Loader";
+
 export default function Home() {
-  return (
-    <Link
-      prefetch={true}
-      href={{
-        pathname: "/[username]",
-        query: { username: "teste123" },
-      }}
-    >
-      Profile do teste123
-    </Link>
-  );
+  return <main></main>;
 }
