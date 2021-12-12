@@ -1,27 +1,28 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
-  const user = true;
-  const username = true;
+  const user = null;
+  const username = null;
 
   return (
     <nav className="navbar">
       <ul>
         <li>
           <Link href="/">
-            <button className="btn-left">Feed</button>
+            <a className="btn-left">Feed</a>
           </Link>
         </li>
         {username && (
           <>
             <li>
               <Link href="/admin">
-                <button>Escreva</button>
+                <a>Escreva</a>
               </Link>
             </li>
             <li>
-              <Link href={`/${username}`}>
-                <img src={user?.photoURL} />
+              <Link href={`/${username}`} passHref>
+                <Image src={user?.photoURL} alt="Alt-text" />
               </Link>
             </li>
           </>
@@ -30,7 +31,7 @@ export default function Navbar() {
         {!username && (
           <li>
             <Link href="/enter">
-              <button>Entrar</button>
+              <a>Entrar</a>
             </Link>
           </li>
         )}
