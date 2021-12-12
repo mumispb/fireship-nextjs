@@ -10,6 +10,7 @@ export default function UserProfile({ user }) {
         alt="user-profile-image"
         height="100"
         width="100"
+        layout="fixed"
       />
       <p>
         <i>@{user.username}</i>

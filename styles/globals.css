@@ -264,7 +264,7 @@ input[type="file"] {
 .box-center {
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   text-align: center;
 }
 
