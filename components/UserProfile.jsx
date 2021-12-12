@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { getUserWithUsername, postToJSON } from "../lib/firebase";
 
 export default function UserProfile({ user }) {
   return (
