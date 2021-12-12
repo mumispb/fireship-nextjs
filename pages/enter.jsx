@@ -1,7 +1,7 @@
 import debounce from "lodash.debounce";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { firestore } from "../lib/firebase.js";
-import { useAuthContext } from "./contexts/auth";
+import { useAuthContext } from "../contexts/auth";
 
 export default function EnterPage() {
   const { user, username, signIn, signOut } = useAuthContext();

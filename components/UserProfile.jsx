@@ -5,7 +5,7 @@ export default function UserProfile({ user }) {
   return (
     <div className="box-center">
       <Image
-        src={user.photoURL}
+        src={user?.photoURL || ""}
         className="card-img-center"
         alt="user-profile-image"
         height="100"

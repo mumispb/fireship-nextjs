@@ -24,7 +24,7 @@ export default function Navbar() {
         </li>
 
         {/* user is signed-in and has username */}
-        {username && (
+        {user && username && (
           <>
             <li className="push-left">
               <button onClick={userSignOut}>Sign Out</button>
@@ -38,7 +38,7 @@ export default function Navbar() {
               <Link href={`/${username}`}>
                 <a>
                   <Image
-                    src={user?.photoURL}
+                    src={user?.photoURL || ""}
                     alt="user photo"
                     height="50"
                     width="50"
